@@ -1,4 +1,4 @@
-# SBerp v3 — 프로젝트·태스크 관리 & 채용관리 모듈 (REST API 전환 + AI 채용 매칭)
+# SBerp v3 — 프로젝트·태스크·공지 관리 & 채용관리 모듈 (REST API 전환 + AI 채용 매칭)
 
 6인 팀으로 진행한 사내 ERP 프로젝트(spring-breeze) v3(최종) 버전 중, 제가 담당한 프로젝트/태스크 모듈의 REST API 전환과 신규 개발한 채용관리(RAG 기반 AI 매칭) 모듈을 정리한 저장소입니다.
 
@@ -9,12 +9,12 @@
 | 항목 | 내용 |
 |---|---|
 | 프로젝트명 | SBerp v3 (spring-breeze-erp-v3) |
-| 팀명 | Spring Breeze (Team 04) |
+| 팀명 | Spring Breeze |
 | 개발 기간 | 2026.08.01~2026.08.28 |
 | 팀 인원 | 4명 |
-| 도메인 | Enterprise Resource Planning |
+| 도메인 | https://cdy-sberp.duckdns.org / https://cdy-sberp.duckdns.org/careers |
 | 신규 기능 | REST API 전환, Critical Path 탐색기, 채용관리(RAG), 소셜 로그인 |
-| 대상 사용자 | 중소 규모 기업 관리자 / 임직원 |
+| 대상 사용자 | 중소 규모 기업 관리자 / 임직원 / 비회원용 소셜 |
 | 담당 모듈 | 프로젝트 · 태스크 · 공지(REST 전환) + 채용관리 신규 구축 |
 | v2 대비 추가 범위 | MVC → REST API 전환, JWT+Redis 인증, React SPA 전환, 채용관리(Recruit·Applicant·Resume·RAG) 신규 |
 
@@ -74,7 +74,7 @@
 
 ## Features
 
-### 프로젝트/태스크 모듈 REST API 전환
+### 프로젝트/태스크/공지 모듈 REST API 전환
 기존 Thymeleaf MVC 컨트롤러를 RestController 기반 API로 전환했습니다.
 - Request/Response DTO 분리, comId/empId는 서버에서 JWT로 세팅(`@Schema(hidden=true)`)
 - `@Valid` 검증 누락분 전체 추가, 서버 세팅 필드는 `@NotNull` 제거(검증 시점 이슈 대응)
