@@ -1,6 +1,6 @@
 # SBerp v3 — 프로젝트·태스크·공지 관리 & 채용관리 모듈 (REST API 전환 + AI 채용 매칭)
 
-6인 팀으로 진행한 사내 ERP 프로젝트(spring-breeze) v3(최종) 버전 중, 제가 담당한 프로젝트/태스크 모듈의 REST API 전환과 신규 개발한 채용관리(RAG 기반 AI 매칭) 모듈을 정리한 저장소입니다.
+사내 ERP 프로젝트(spring-breeze) v3(최종) 버전 중, 제가 담당한 프로젝트/태스크 모듈의 REST API 전환과 신규 개발한 채용관리(RAG 기반 AI 매칭) 모듈을 정리한 저장소입니다.
 
 팀 전체 코드 → https://github.com/yoonguri988/spring-breeze-erp
 
@@ -14,7 +14,7 @@
 | 팀 인원 | 4명 |
 | 도메인 | https://cdy-sberp.duckdns.org / https://cdy-sberp.duckdns.org/careers |
 | 신규 기능 | REST API 전환, Critical Path 탐색기, 채용관리(RAG), 소셜 로그인 |
-| 대상 사용자 | 중소 규모 기업 관리자 / 임직원 / 비회원용 소셜 |
+| 대상 사용자 | 중소 규모 기업 관리자 / 임직원 / 사용자 / 비회원용 소셜 |
 | 담당 모듈 | 프로젝트 · 태스크 · 공지(REST 전환) + 채용관리 신규 구축 |
 | v2 대비 추가 범위 | MVC → REST API 전환, JWT+Redis 인증, React SPA 전환, 채용관리(Recruit·Applicant·Resume·RAG) 신규 |
 
